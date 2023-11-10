@@ -10,14 +10,14 @@ import {
 import { CurvedBottomBarExpo } from 'react-native-curved-bottom-bar';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
-
+import Home from './screens/home/Home';
 
 
 LogBox.ignoreAllLogs();
 
-const Screen1 = () => {
-  return <View style={styles.screen1} />;
-};
+// const Screen1 = () => {
+//   return <View style={styles.screen1} />;
+// };
 
 const Screen2 = () => {
   return <View style={styles.screen2} />;
@@ -98,7 +98,7 @@ const BottomNavigation= () =>{
         <CurvedBottomBarExpo.Screen
           name="title1"
           position="LEFT"
-          component={() => <Screen1 />}
+          component={() => <Home/>}
         />
         <CurvedBottomBarExpo.Screen
           name="title2"
