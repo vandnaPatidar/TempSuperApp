@@ -20,7 +20,9 @@
     "react-native-screens": "~3.22.0",
     "react-native-svg": "13.9.0",
     "yarn": "^1.22.19",
-    "@expo/vector-icons": "^13.0.0"
+    "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/native-stack": "^6.9.16",
+    "expo-local-authentication": "^13.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
