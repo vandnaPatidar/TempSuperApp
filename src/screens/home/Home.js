@@ -2,14 +2,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import SizzlerCampaigns from './sizzler/SizzlerCampaigns'
 import QuickLinks from './quickLinks/QuickLinks'
-import Dashboard from '../../components/Dashboard'
+import LeadsAtGlance from '../../components/LeadsAtGlance'
 
 const Home = () => {
   return (
     <View>
       <SizzlerCampaigns/>
       <QuickLinks/>
-      <Dashboard/>
+      <LeadsAtGlance/>
     </View>
   )
 }
