@@ -30,10 +30,10 @@ const LoginScreen = ({ navigation }) => {
       const result = await LocalAuthentication.authenticateAsync();
       console.log("result----------->", result);
       if (result.success) {
-        alert("Authentication successfull!");
+        // alert("Authentication successfull!");
         navigation.navigate("BottomNavigation");
       } else {
-        alert("Authentication failed or canceled.");
+        // alert("Authentication failed or canceled.");
         navigation.navigate("BottomNavigation");
       }
     } else {

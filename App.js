@@ -33,7 +33,6 @@ const App = () => {
           // }}
         />
         <Stack.Screen name="Quotes" component={Quotes} />
-
       </Stack.Navigator>
     </NavigationContainer>
   );

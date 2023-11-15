@@ -210,6 +210,7 @@ export const images = {
   LEADS: require("../../images/Group.png"),
   // LEADS: require("../../images/Groups.svg"),
   ARROW_RIGHT: require("../../images/arrow-right.png"),
+  STATUS: require("../../images/status.png"),
 };
 
 export const GO_WITH_THIS_QUOTE = "Go with this quote";
@@ -299,3 +300,40 @@ export const status = [
     statusCount: 38,
   },
 ];
+
+export const modalTable=[
+  [
+    {
+      id:1,
+      name:"Criteria",
+      value:"2 L to 4.99 L (Adj. MFYP)"
+    },
+    {
+      id:2,
+      name:"Reward",
+      value:"Rs 1000/- per NOP"
+    },
+    {
+      id:3,
+      name:"Minima",
+      value:"100% MPA Achieved"
+    },
+  ],
+  [
+    {
+      id:1,
+      name:"Criteria",
+      value:"5 L to Above (Adj. MFYP)"
+    },
+    {
+      id:2,
+      name:"Reward",
+      value:"Rs 3500/- per NOP"
+    },
+    {
+      id:3,
+      name:"Minima",
+      value:"100% MPA Achieved"
+    },
+  ]
+]
