@@ -6,9 +6,13 @@ import {
   TouchableOpacity,
   View,
   LogBox,
+  Image,
+  Text,
 } from 'react-native';
 import { CurvedBottomBarExpo } from 'react-native-curved-bottom-bar';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import MenuClip from '../assets/Icons/clipboard.png';
+import HomeIcon from '../images/home.png';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './screens/home/Home';
 
@@ -36,26 +40,31 @@ const BottomNavigation = () => {
 
     switch (routeName) {
       case 'title1':
-        icon = 'ios-home-outline';
+        icon = require('../images/home.png');
+        name = 'Home';
         break;
       case 'title2':
-        icon = 'bookmark';
+        icon = require('../images/contacts.png');
+        name = 'Leads';
         break;
       case 'title3':
-        icon = 'calendar';
+        icon = require('../images/calendar.png');
+        name = 'Calendar';
         break;
       case 'title4':
-        icon = 'menu';
+        icon = require('../images/menu.png');
+        name = 'Menu';
         break;
     }
 
     return (
       <>
-        <Ionicons
-          name={icon}
-          size={25}
+        <Image
+          source={icon}
+          size={26}
           color={routeName === selectedTab ? 'black' : 'gray'}
         />
+        <Text>{name}</Text>
         {/* <AntDesign name={icon} size={25}  color={routeName === selectedTab ? 'black' : 'gray'} /> */}
       </>
     );
@@ -88,7 +97,7 @@ const BottomNavigation = () => {
             style={styles.button}
             onPress={() => Alert.alert('Click Action')}
           >
-            <Ionicons name={'apps-sharp'} color='gray' size={25} />
+            <Image source={MenuClip} width={30} height={30} />
           </TouchableOpacity>
         </Animated.View>
       )}
@@ -103,11 +112,11 @@ const BottomNavigation = () => {
       <CurvedBottomBarExpo.Screen
         name='title2'
         component={() => <Screen2 />}
-        position='RIGHT'
+        position='LEFT'
       />
       <CurvedBottomBarExpo.Screen
         name='title3'
-        position='LEFT'
+        position='RIGHT'
         component={() => <Screen3 />}
       />
       <CurvedBottomBarExpo.Screen

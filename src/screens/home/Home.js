@@ -10,26 +10,28 @@ import MorningHuddles from '../../components/MorningHuddle/MorningHuddles';
 
 const Home = () => {
   return (
-    <ScrollView style={styles.main}>
+    <>
       <View style={{ marginTop: 25, marginBottom: 16 }}>
         <Header />
       </View>
-      <SizzlerCampaigns />
-      <View style={styles.pager}>
-        <PagerViewContest />
-      </View>
+      <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
+        <SizzlerCampaigns />
+        <View style={styles.pager}>
+          <PagerViewContest />
+        </View>
 
-      <View>
-        <MorningHuddles />
-      </View>
+        <View>
+          <MorningHuddles />
+        </View>
 
-      <QuickLinks />
+        <QuickLinks />
 
-      <Performance />
-      {/* <Dashboard /> */}
+        <Performance />
+        {/* <Dashboard /> */}
 
-      <LeadsAtGlance />
-    </ScrollView>
+        <LeadsAtGlance />
+      </ScrollView>
+    </>
   );
 };
 
