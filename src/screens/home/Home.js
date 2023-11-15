@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View ,ScrollView } from "react-native";
 import React from "react";
 import SizzlerCampaigns from "./sizzler/SizzlerCampaigns";
 import QuickLinks from "./quickLinks/QuickLinks";
 import LeadsAtGlance from "../../components/LeadsAtGlance";
+import PagerViewContest from "../home/contest/PagerViewContest"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
 
       <QuickLinks />
 
-      <Dashboard />
+      {/* <Dashboard /> */}
 
       <LeadsAtGlance />
     </ScrollView>
