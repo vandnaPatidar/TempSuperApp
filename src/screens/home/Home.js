@@ -4,6 +4,7 @@ import SizzlerCampaigns from "./sizzler/SizzlerCampaigns";
 import QuickLinks from "./quickLinks/QuickLinks";
 import LeadsAtGlance from "../../components/LeadsAtGlance";
 import PagerViewContest from "../home/contest/PagerViewContest"
+import Performance from './performance/Performance'
 
 const Home = () => {
   return (
@@ -14,10 +15,12 @@ const Home = () => {
       </View>
 
       <QuickLinks />
-
+     
+      <Performance/>
       {/* <Dashboard /> */}
 
       <LeadsAtGlance />
+     
     </ScrollView>
   );
 };
