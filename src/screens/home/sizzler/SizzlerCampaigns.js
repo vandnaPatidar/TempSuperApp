@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import CircularImage from './CircularImage';
@@ -32,6 +31,7 @@ const SizzlerCampaigns = () => {
   return (
     <View>
       <FlatList
+        showsHorizontalScrollIndicator={false}
         data={sizzlerData}
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -42,7 +42,11 @@ const SizzlerCampaigns = () => {
           </TouchableOpacity>
         )}
       />
-      <CampaignModal visible={modalVisible} onClose={closeModal} imageSource={imageMap[selectedImage]} />
+      <CampaignModal
+        visible={modalVisible}
+        onClose={closeModal}
+        imageSource={imageMap[selectedImage]}
+      />
     </View>
   );
 };
