@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './style';
 import { View, Text, Image, Pressable } from 'react-native';
-import userProfile from '../../../assets/Images/user-photo.png';
+// import userProfile from '../../../assets/Images/user-photo.png';
+import {images} from '../../utils/constants'
 import arrowIcon from '../../../assets/Icons/chevron-down.png';
 import bellIcon from '../../../assets/Icons/Union.png';
 import helpCenter from '../../../assets/Icons/Vector.png';
@@ -11,7 +12,7 @@ const Header = () => {
     <View style={styles.container}>
       {/* Left side logo */}
       <View style={styles.leftContainer}>
-        <Image source={userProfile} style={styles.logoImage} />
+        <Image source={images.USER_PROFILE} style={styles.logoImage} />
         <Text style={styles.dotStyle} />
 
         {/* Right side arrow */}
