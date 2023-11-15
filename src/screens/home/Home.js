@@ -6,6 +6,7 @@ import LeadsAtGlance from "../../components/LeadsAtGlance";
 import PagerViewContest from "../home/contest/PagerViewContest"
 
 const Home = () => {
+  console.log("Home");
   return (
     <ScrollView style={styles.main}>
       <SizzlerCampaigns />
@@ -14,7 +15,7 @@ const Home = () => {
       </View>
 
       <QuickLinks />
-
+ 
       {/* <Dashboard /> */}
 
       <LeadsAtGlance />
