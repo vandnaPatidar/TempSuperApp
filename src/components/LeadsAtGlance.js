@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
 import { status, leadsAtGlance, leadsAtGlanceData } from "../utils/constants";
-import StatusList from "./StatusList";
+import LeadsAtGlanceList from "./LeadsAtGlanceList";
 
 const LeadsAtGlance = () => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState("Status");
 
-  const leadsAtGlanceList = ({ item, index }) => {
+  const leadsAtGlanceSorterList = ({ item, index }) => {
     const isSelected = selectedItemIndex === index;
     return (
       <TouchableOpacity
@@ -45,14 +45,14 @@ const LeadsAtGlance = () => {
               horizontal={true}
               scrollEnabled={true}
               showsHorizontalScrollIndicator={false}
-              renderItem={leadsAtGlanceList}
+              renderItem={leadsAtGlanceSorterList}
               keyExtractor={(item, index) => index.toString()}
             />
           </View>
           <FlatList
             data={leadsAtGlanceData[selectedItemIndex]}
             scrollEnabled={true}
-            renderItem={(item, index) => <StatusList {...item} />}
+            renderItem={(item, index) => <LeadsAtGlanceList {...item} />}
           />
         </View>
       </View>
