@@ -5,8 +5,8 @@ import QuickLinks from './quickLinks/QuickLinks';
 import LeadsAtGlance from '../../components/LeadsAtGlance';
 import PagerViewContest from '../home/contest/PagerViewContest';
 import Header from '../../components/Header/Header';
-import PagerViewContest from '../home/contest/PagerViewContest';
 import Performance from './performance/Performance';
+import MorningHuddles from '../../components/MorningHuddle/MorningHuddles';
 
 const Home = () => {
   return (
@@ -17,6 +17,10 @@ const Home = () => {
       <SizzlerCampaigns />
       <View style={styles.pager}>
         <PagerViewContest />
+      </View>
+
+      <View>
+        <MorningHuddles />
       </View>
 
       <QuickLinks />
