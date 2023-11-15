@@ -1,12 +1,9 @@
-// CustomHeader.js
 import React, { useState } from "react";
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
 import { status, leadsAtGlance, leadsAtGlanceData } from "../utils/constants";
 import StatusList from "./StatusList";
-// import LeadsAtGlanceList from "./LeadsAtGlanceList";
-import BottomNavigation from "../BottomNavigation";
 
-const Dashboard = () => {
+const LeadsAtGlance = () => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState("Status");
 
@@ -39,15 +36,6 @@ const Dashboard = () => {
   };
 
   return (
-
-    // <View
-    //   style={{
-    //     marginTop: 32,
-    //     flex: 1,
-    //     backgroundColor: "#FFFFFF",
-    //     justifyContent: "center",
-    //   }}
-    // >
       <View style={styles.glanceView}>
         <Text style={styles.glanceHeading}>LEADS AT A GLANCE</Text>
         <View style={styles.glanceCard}>
@@ -68,11 +56,10 @@ const Dashboard = () => {
           />
         </View>
       </View>
-    // </View>
   );
 };
 
-export default Dashboard;
+export default LeadsAtGlance;
 
 const styles = StyleSheet.create({
   glanceView: {

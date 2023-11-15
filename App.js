@@ -1,15 +1,13 @@
 // In App.js in a new project
 
 import * as React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Quotes from "./src/screens/Quotes";
 import PolicyLogin from "./src/screens/PolicyLoginScreen";
-import CustomHeader from "./src/components/CustomHeader";
 import LoginScreen from "./src/screens/LoginScreen";
 import OnboardingScreen from "./src/screens/OnboardingScreen";
-import Dashboard from "./src/components/Dashboard";
 import BottomNavigation from "./src/BottomNavigation";
 
 const Stack = createNativeStackNavigator();
@@ -21,8 +19,7 @@ const App = () => {
       {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
       <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} options={{headerShown: false}} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
-      <Stack.Screen name="BottomNavigation" component={BottomNavigation} options={{headerShown: false}} />
-      <Stack.Screen name="Dashboard" component={Dashboard} options={{headerShown: false}} />
+      <Stack.Screen name="BottomNavigation" component={BottomNavigation} options={{headerShown: true}} />
         <Stack.Screen
           name="PolicyLogin"
           component={PolicyLogin}
