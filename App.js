@@ -21,7 +21,7 @@ const App = () => {
       {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
       <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} options={{headerShown: false}} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
-      <Stack.Screen name="BottomNavigation" component={BottomNavigation} options={{headerShown: true}} />
+      <Stack.Screen name="BottomNavigation" component={BottomNavigation} options={{headerShown: false}} />
       <Stack.Screen name="Dashboard" component={Dashboard} options={{headerShown: false}} />
         <Stack.Screen
           name="PolicyLogin"

@@ -97,6 +97,7 @@ const BottomNavigation = () => {
           name="title1"
           position="LEFT"
           component={() => <Home />}
+          Options={{headerShown: false}}
         />
         <CurvedBottomBarExpo.Screen
           name="title2"
