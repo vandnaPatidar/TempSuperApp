@@ -1,3 +1,43 @@
+export const images = {
+  MAXLIFE_LOGO: require("../../assets/Images/Maxlife-Logo.png"),
+  STATUS: require("../../assets/Images/status.png"),
+  USER_PROFILE: require("../../assets/Images/user-photo.png"),
+  FIRST_MODAL: require("../../assets/Images/FirstModal.png"),
+  FIRST_REWARD_IMAGE: require("../../assets/Images/FirstReward.png"),
+  SECOND_REWARD_IMAGE: require("../../assets/Images/SecondReward.png"),
+  THIRD_REWARD_IMAGE: require("../../assets/Images/ThirdReward.png"),
+  FOURTH_REWARD_IMAGE: require("../../assets/Images/FourthReward.png"),
+};
+
+export const icons = {
+  CHEVRON_DOWN: require("../../assets/Icons/chevron-down.png"),
+  CHEVRON_UP: require("../../assets/Icons/chevron-up.png"),
+  CHEVRON_RIGHT: require("../../assets/Icons/chevron-right.png"),
+  CHEVRON_RIGHT_BLACK: require("../../assets/Icons/chevron-right-black.png"),
+  PLUS_BUTTON: require("../../assets/Icons/plus.png"),
+  LEADS: require("../../assets/Icons/Group.png"),
+  ARROW_RIGHT: require("../../assets/Icons/arrow-right.png"),
+  CLOSE_ICON: require("../../assets/Icons/close.png"),
+  ADD_NEW_LEAD_ICON: require("../../assets/Icons/AddNewLead.png"),
+  TRACK_APPLICATION_ICON: require("../../assets/Icons/TrackApplication.png"),
+  MENU_CLIPBOARD: require("../../assets/Icons/clipboard.png"),
+  HOME_ICON: require("../../assets/Icons/home.png"),
+  CONTACTS_ICON: require("../../assets/Icons/contacts.png"),
+  CALENDAR_ICON: require("../../assets/Icons/calendar.png"),
+  MENU_ICON: require("../../assets/Icons/menu.png"),
+  MICROSOFT_TEAMS: require("../../assets/Icons/microsoft_teams.png"),
+  BELL_ICON: require("../../assets/Icons/Union.png"),
+  HELP_CENTER: require("../../assets/Icons/Vector.png"),
+  IDEA_ICON: require("../../assets/Icons/ideaIcon.png"),
+};
+
+export const animations = {
+ CONFETTI: require("../../assets/Animations/confetti.json"),
+ HOT: require("../../assets/Animations/hot.json"),
+};
+
+export const GO_WITH_THIS_QUOTE = "Go with this quote";
+
 export const plans = [
   {
     id: "1",
@@ -200,44 +240,6 @@ export const leads = [
   },
 ];
 
-export const images = {
-  MAXLIFE_LOGO: require("../../assets/Images/Maxlife-Logo.png"),
-  STATUS: require("../../assets/Images/status.png"),
-  USER_PROFILE: require("../../assets/Images/user-photo.png"),
-  FIRST_MODAL: require("../../assets/Images/FirstModal.png"),
-  FIRST_REWARD_IMAGE: require("../../assets/Images/FirstReward.png"),
-  SECOND_REWARD_IMAGE: require("../../assets/Images/SecondReward.png"),
-  THIRD_REWARD_IMAGE: require("../../assets/Images/ThirdReward.png"),
-  FOURTH_REWARD_IMAGE: require("../../assets/Images/FourthReward.png"),
-};
-
-export const icons = {
-  CHEVRON_DOWN: require("../../assets/Icons/chevron-down.png"),
-  CHEVRON_UP: require("../../assets/Icons/chevron-up.png"),
-  CHEVRON_RIGHT: require("../../assets/Icons/chevron-right.png"),
-  CHEVRON_RIGHT_BLACK: require("../../assets/Icons/chevron-right-black.png"),
-  PLUS_BUTTON: require("../../assets/Icons/plus.png"),
-  LEADS: require("../../assets/Icons/Group.png"),
-  ARROW_RIGHT: require("../../assets/Icons/arrow-right.png"),
-  CLOSE_ICON: require("../../assets/Icons/close.png"),
-  ADD_NEW_LEAD_ICON: require("../../assets/Icons/AddNewLead.png"),
-  TRACK_APPLICATION_ICON: require("../../assets/Icons/TrackApplication.png"),
-  MENU_CLIPBOARD: require("../../assets/Icons/clipboard.png"),
-  HOME_ICON: require("../../assets/Icons/home.png"),
-  CONTACTS_ICON: require("../../assets/Icons/contacts.png"),
-  CALENDAR_ICON: require("../../assets/Icons/calendar.png"),
-  MENU_ICON: require("../../assets/Icons/menu.png"),
-  MICROSOFT_TEAMS: require("../../assets/Icons/microsoft_teams.png"),
-  BELL_ICON: require("../../assets/Icons/Union.png"),
-  HELP_CENTER: require("../../assets/Icons/Vector.png"),
-};
-
-export const animations = {
- CONFETTI: require("../../assets/Animations/confetti.json"),
- HOT: require("../../assets/Animations/hot.json"),
-};
-
-export const GO_WITH_THIS_QUOTE = "Go with this quote";
 export const leadsAtGlance = [
   // {
   //   name: "Status",

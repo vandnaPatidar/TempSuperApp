@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
-import { images, GO_WITH_THIS_QUOTE, icons } from "../utils/constants";
+import { GO_WITH_THIS_QUOTE, icons } from "../utils/constants";
 
 const QuoteCard = ({ item }) => {
   const [isFullDetails, setIsFullDetails] = useState(false);

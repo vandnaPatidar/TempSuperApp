@@ -31,7 +31,7 @@ const Screen4 = () => {
   return <View style={styles.screen2} />;
 };
 
-const BottomNavigation = () => {
+const BottomNavigation = ({navigation}) => {
   const _renderIcon = (routeName, selectedTab) => {
     let icon = '';
 
@@ -60,6 +60,7 @@ const BottomNavigation = () => {
           source={icon}
           size={26}
           color={routeName === selectedTab ? 'black' : 'gray'}
+          resizeMode='contain'
         />
         <Text>{name}</Text>
         {/* <AntDesign name={icon} size={25}  color={routeName === selectedTab ? 'black' : 'gray'} /> */}

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './style';
 import { View, Text, Image, Pressable } from 'react-native';
-// import userProfile from '../../../assets/Images/user-photo.png';
 import {icons, images} from '../../utils/constants'
 
 
