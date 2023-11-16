@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
-import { images } from "../utils/constants";
+import { icons, images } from "../utils/constants";
 
 const LeadCard = ({ item }) => {
   return (
@@ -47,7 +47,7 @@ const LeadCard = ({ item }) => {
             </Text>
           </View>
           <Image
-            source={images.CHEVRON_RIGHT_BLACK}
+            source={icons.CHEVRON_RIGHT_BLACK}
           />
         </View>
         <Text

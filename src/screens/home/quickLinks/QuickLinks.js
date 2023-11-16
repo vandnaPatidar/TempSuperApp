@@ -1,47 +1,41 @@
 import React from "react";
 import { View, FlatList, Image, StyleSheet, Text } from "react-native";
-import AddNewLeadImage from '../../../../assets/AddNewLead.png';
-import TrackApplicationImage from "../../../../assets/TrackApplication.png";
-
-const imageMap = {
-  "AddNewLeadImage.png": AddNewLeadImage,
-  "TrackApplicationImage.png": TrackApplicationImage,
-};
+import { icons, images } from "../../../utils/constants";
 
 const quickData = [
   { 
     id: "1", 
-    image: imageMap["AddNewLeadImage.png"], 
+    image: icons.ADD_NEW_LEAD_ICON, 
     text: "Add New Lead" 
   },
   { 
     id: "2", 
-    image: imageMap["AddNewLeadImage.png"], 
+    image: icons.ADD_NEW_LEAD_ICON, 
     text: "Generate Quote" 
   },
   { 
     id: "3", 
-    image: imageMap["AddNewLeadImage.png"], 
+    image: icons.ADD_NEW_LEAD_ICON, 
     text: "Policy Login" 
   },
   {
     id: "4",
-    image: imageMap["TrackApplicationImage.png"],
+    image: icons.ADD_NEW_LEAD_ICON,
     text: "Track Application",
   },
   {
     id: "5",
-    image: imageMap["TrackApplicationImage.png"],
+    image: icons.ADD_NEW_LEAD_ICON,
     text: "Service Requests",
   },
   {
     id: "6",
-    image: imageMap["TrackApplicationImage.png"],
+    image: icons.ADD_NEW_LEAD_ICON,
     text: "Policy Servicing",
   },
   {
     id: "7",
-    image: imageMap["TrackApplicationImage.png"],
+    image: icons.ADD_NEW_LEAD_ICON,
     text: "Compare Plans",
   },
 ];

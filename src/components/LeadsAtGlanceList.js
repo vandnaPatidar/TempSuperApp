@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
-import { images } from "../utils/constants";
+import { icons, images } from "../utils/constants";
 
 const LeadsAtGlanceList = ({ item, index }) => {
   return (
@@ -27,7 +27,7 @@ const LeadsAtGlanceList = ({ item, index }) => {
           width:'100%'
         }}
       >
-        <Image style={{ marginHorizontal: 8 }} source={images.LEADS} />
+        <Image style={{ marginHorizontal: 8 }} source={icons.LEADS} />
         <Text
           style={{
             width: 155,

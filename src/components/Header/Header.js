@@ -2,10 +2,8 @@ import React from 'react';
 import styles from './style';
 import { View, Text, Image, Pressable } from 'react-native';
 // import userProfile from '../../../assets/Images/user-photo.png';
-import {images} from '../../utils/constants'
-import arrowIcon from '../../../assets/Icons/chevron-down.png';
-import bellIcon from '../../../assets/Icons/Union.png';
-import helpCenter from '../../../assets/Icons/Vector.png';
+import {icons, images} from '../../utils/constants'
+
 
 const Header = () => {
   return (
@@ -17,7 +15,7 @@ const Header = () => {
 
         {/* Right side arrow */}
         <Pressable style={styles.rightSideArrow}>
-          <Image source={arrowIcon} style={styles.arrowImage} />
+          <Image source={icons.CHEVRON_DOWN} style={styles.arrowImage} />
         </Pressable>
       </View>
 
@@ -25,12 +23,12 @@ const Header = () => {
       <View style={styles.rightContainer}>
         {/* bellIcon for Help center text */}
         <Pressable>
-          <Image source={bellIcon} style={styles.helpCenterText} />
+          <Image source={icons.BELL_ICON} style={styles.helpCenterText} />
         </Pressable>
 
         {/* chatBot Developer text */}
         <Pressable style={{ marginLeft: 28 }}>
-          <Image source={helpCenter} style={styles.helpCenterText} />
+          <Image source={icons.HELP_CENTER} style={styles.helpCenterText} />
         </Pressable>
       </View>
     </View>

@@ -7,8 +7,7 @@ import {
   StyleSheet,
   Text,
 } from "react-native";
-import FirstModal from "../../../../assets/FirstModal.png";
-import { images } from "../../../utils/constants";
+import { icons, images } from "../../../utils/constants";
 import Table from "../../../components/Table";
 
 const CampaignModal = ({ visible, onClose }) => {
@@ -65,7 +64,7 @@ const CampaignModal = ({ visible, onClose }) => {
               marginBottom: 8,
             }}
           >
-            <Image source={require("../../../../assets/close.png")} />
+            <Image source={icons.CLOSE_ICON} />
           </TouchableOpacity>
           <Image
             source={images.STATUS}
