@@ -34,7 +34,6 @@ const SizzlerCampaigns = () => {
         showsHorizontalScrollIndicator={false}
         data={sizzlerData}
         horizontal
-        showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleImageClick(item.source)}>
