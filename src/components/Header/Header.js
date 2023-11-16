@@ -12,7 +12,7 @@ const Header = () => {
     <View style={styles.container}>
       {/* Left side logo */}
       <View style={styles.leftContainer}>
-        <Image source={images.USER_PROFILE} style={styles.logoImage} />
+        <Image source={images.USER_PROFILE_PHOTO} style={styles.logoImage} />
         <Text style={styles.dotStyle} />
 
         {/* Right side arrow */}

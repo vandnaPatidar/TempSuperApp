@@ -211,7 +211,7 @@ export const images = {
   // LEADS: require("../../images/Groups.svg"),
   ARROW_RIGHT: require("../../images/arrow-right.png"),
   STATUS: require("../../images/status.png"),
-  USER_PROFILE: require("../../assets/images/user-photo.png"),
+  USER_PROFILE_PHOTO: require('../../assets/Images/user-photo.png'),
 };
 
 export const GO_WITH_THIS_QUOTE = "Go with this quote";
