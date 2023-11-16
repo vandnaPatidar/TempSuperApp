@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Alert,
   Animated,
@@ -6,11 +6,15 @@ import {
   TouchableOpacity,
   View,
   LogBox,
-} from "react-native";
-import { CurvedBottomBarExpo } from "react-native-curved-bottom-bar";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { NavigationContainer } from "@react-navigation/native";
-import Home from "./screens/home/Home";
+  Image,
+  Text,
+} from 'react-native';
+import { CurvedBottomBarExpo } from 'react-native-curved-bottom-bar';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import MenuClip from '../assets/Icons/clipboard.png';
+import HomeIcon from '../images/home.png';
+import { NavigationContainer } from '@react-navigation/native';
+import Home from './screens/home/Home';
 
 LogBox.ignoreAllLogs();
 
@@ -32,30 +36,35 @@ const Screen4 = () => {
 
 const BottomNavigation = () => {
   const _renderIcon = (routeName, selectedTab) => {
-    let icon = "";
+    let icon = '';
 
     switch (routeName) {
-      case "title1":
-        icon = "ios-home-outline";
+      case 'title1':
+        icon = require('../images/home.png');
+        name = 'Home';
         break;
-      case "title2":
-        icon = "bookmark";
+      case 'title2':
+        icon = require('../images/contacts.png');
+        name = 'Leads';
         break;
-      case "title3":
-        icon = "calendar";
+      case 'title3':
+        icon = require('../images/calendar.png');
+        name = 'Calendar';
         break;
-      case "title4":
-        icon = "menu";
+      case 'title4':
+        icon = require('../images/menu.png');
+        name = 'Menu';
         break;
     }
 
     return (
       <>
-        <Ionicons
-          name={icon}
-          size={25}
-          color={routeName === selectedTab ? "black" : "gray"}
+        <Image
+          source={icon}
+          size={26}
+          color={routeName === selectedTab ? 'black' : 'gray'}
         />
+        <Text>{name}</Text>
         {/* <AntDesign name={icon} size={25}  color={routeName === selectedTab ? 'black' : 'gray'} /> */}
       </>
     );
@@ -72,49 +81,50 @@ const BottomNavigation = () => {
   };
 
   return (
-      <CurvedBottomBarExpo.Navigator
-        type="DOWN"
-        style={styles.bottomBar}
-        shadowStyle={styles.shawdow}
-        height={55}
-        circleWidth={50}
-        bgColor="white"
-        initialRouteName="title1"
-        borderTopLeftRight
-        renderCircle={({ selectedTab, navigate }) => (
-          <Animated.View style={styles.btnCircleUp}>
-            <TouchableOpacity
-              style={styles.button}
-              onPress={() => Alert.alert("Click Action")}
-            >
-              <Ionicons name={"apps-sharp"} color="gray" size={25} />
-            </TouchableOpacity>
-          </Animated.View>
-        )}
-        tabBar={renderTabBar}
-      >
-        <CurvedBottomBarExpo.Screen
-          name="title1"
-          position="LEFT"
-          component={() => <Home />}
-          Options={{headerShown: false}}
-        />
-        <CurvedBottomBarExpo.Screen
-          name="title2"
-          component={() => <Screen2 />}
-          position="RIGHT"
-        />
-        <CurvedBottomBarExpo.Screen
-          name="title3"
-          position="LEFT"
-          component={() => <Screen3 />}
-        />
-        <CurvedBottomBarExpo.Screen
-          name="title4"
-          component={() => <Screen4 />}
-          position="RIGHT"
-        />
-      </CurvedBottomBarExpo.Navigator>
+    <CurvedBottomBarExpo.Navigator
+      type='DOWN'
+      style={styles.bottomBar}
+      shadowStyle={styles.shawdow}
+      height={55}
+      circleWidth={50}
+      bgColor='white'
+      initialRouteName='title1'
+      borderTopLeftRight
+      screenOptions={{ headerShown: false }}
+      renderCircle={({ selectedTab, navigate }) => (
+        <Animated.View style={styles.btnCircleUp}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => Alert.alert('Click Action')}
+          >
+            <Image source={MenuClip} width={30} height={30} />
+          </TouchableOpacity>
+        </Animated.View>
+      )}
+      tabBar={renderTabBar}
+    >
+      <CurvedBottomBarExpo.Screen
+        name='title1'
+        position='LEFT'
+        component={Home}
+        options={{ headerShown: false }}
+      />
+      <CurvedBottomBarExpo.Screen
+        name='title2'
+        component={() => <Screen2 />}
+        position='LEFT'
+      />
+      <CurvedBottomBarExpo.Screen
+        name='title3'
+        position='RIGHT'
+        component={() => <Screen3 />}
+      />
+      <CurvedBottomBarExpo.Screen
+        name='title4'
+        component={() => <Screen4 />}
+        position='RIGHT'
+      />
+    </CurvedBottomBarExpo.Navigator>
   );
 };
 
@@ -126,7 +136,7 @@ export const styles = StyleSheet.create({
     padding: 20,
   },
   shawdow: {
-    shadowColor: "#DDDDDD",
+    shadowColor: '#DDDDDD',
     shadowOffset: {
       width: 0,
       height: 0,
@@ -136,18 +146,17 @@ export const styles = StyleSheet.create({
   },
   button: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
   },
-  bottomBar: {},
   btnCircleUp: {
     width: 60,
     height: 60,
     borderRadius: 30,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#E8E8E8",
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#E8E8E8',
     bottom: 30,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -159,12 +168,12 @@ export const styles = StyleSheet.create({
   imgCircle: {
     width: 30,
     height: 30,
-    tintColor: "gray",
+    tintColor: 'gray',
   },
   tabbarItem: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   img: {
     width: 30,
@@ -172,10 +181,10 @@ export const styles = StyleSheet.create({
   },
   screen1: {
     flex: 1,
-    backgroundColor: "#BFEFFF",
+    backgroundColor: '#BFEFFF',
   },
   screen2: {
     flex: 1,
-    backgroundColor: "#FFEBCD",
+    backgroundColor: '#FFEBCD',
   },
 });

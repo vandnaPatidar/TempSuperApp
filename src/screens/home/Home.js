@@ -1,25 +1,36 @@
-import { StyleSheet, Text, View ,ScrollView } from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
 import React from "react";
 import SizzlerCampaigns from "./sizzler/SizzlerCampaigns";
 import QuickLinks from "./quickLinks/QuickLinks";
 import LeadsAtGlance from "../../components/LeadsAtGlance";
-import PagerViewContest from "../home/contest/PagerViewContest"
+import PagerViewContest from "../home/contest/PagerViewContest";
+import Header from "../../components/Header/Header";
+import Performance from "./performance/Performance";
+import MorningHuddles from "../../components/MorningHuddle/MorningHuddles";
 
 const Home = () => {
-  console.log("Home");
   return (
-    <ScrollView style={styles.main}>
-      <SizzlerCampaigns />
-      <View style={styles.pager}>
-        <PagerViewContest />
+    <>
+      <View style={{ marginTop: 25, marginBottom: 16 }}>
+        <Header />
       </View>
+      <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
+        <SizzlerCampaigns />
+        <View style={styles.pager}>
+          <PagerViewContest />
+        </View>
 
-      <QuickLinks />
- 
-      {/* <Dashboard /> */}
+        <View>
+          <MorningHuddles />
+        </View>
 
-      <LeadsAtGlance />
-    </ScrollView>
+        <QuickLinks />
+
+        <Performance />
+
+        <LeadsAtGlance />
+      </ScrollView>
+    </>
   );
 };
 
@@ -27,8 +38,6 @@ export default Home;
 
 const styles = StyleSheet.create({
   main: {
-    paddingRight: 16,
-    paddingLeft: 16,
     paddingTop: 12,
     paddingBottom: 12,
   },

@@ -1,37 +1,69 @@
-import React,{useState} from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  FlatList,
-  TouchableOpacity,
-  Image,
-} from "react-native";
+import React from "react";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { images } from "../utils/constants";
 
-const LeadsAtGlanceList = ({item}) => {
+const LeadsAtGlanceList = ({ item, index }) => {
   return (
     <TouchableOpacity
       style={{
+        flex: 1,
         flexDirection: "column",
         alignItems: "flex-start",
-        marginRight: 24,
+        backgroundColor: "#FFFFFF",
+        paddingTop: 13,
+        paddingBottom: 17,
+        paddingHorizontal: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: "#DCDDE0",
+        marginHorizontal: 16,
       }}
     >
-      <Text
+      <View
         style={{
-          fontSize: 16,
-          color: isSelected ? '#3597EC' : "#505662",
-          fontWeight: "700",
-          lineHeight: 22.4,
-          letterSpacing: -0.056,
-          marginBottom:4,
+          flex: 1,
+          flexDirection: "row",
+          justifyContent: "flex-start",
+          alignItems: "center",
+          width:'100%'
         }}
       >
-        {item.name}
-      </Text>
-      <View style={{height:3,alignSelf:'stretch',backgroundColor: isSelected ? '#3597EC' : '#FFFFFF',borderTopRightRadius:8, borderTopLeftRadius:8}}/>
+        <Image style={{ marginHorizontal: 8 }} source={images.LEADS} />
+        <Text
+          style={{
+            width: 155,
+            color: "#505662",
+            fontSize: 13,
+            fontWeight: "500",
+            lineHeight: 18,
+            letterSpacing: -0.045,
+            marginRight: 29,
+          }}
+        >
+          {item.statusName}
+        </Text>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            marginLeft: "auto",
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 13,
+              fontWeight: "600",
+              lineHeight: 18.2,
+              letterSpacing: -0.045,
+              marginRight: 16,
+              textAlign: "right",
+            }}
+          >
+            {item.statusCount}
+          </Text>
+          <Image source={images.ARROW_RIGHT} />
+        </View>
+      </View>
     </TouchableOpacity>
   );
 };
