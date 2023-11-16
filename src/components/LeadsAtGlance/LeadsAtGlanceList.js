@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
-import { icons, images } from "../utils/constants";
+import { icons, images } from "../../utils/constants";
 
 const LeadsAtGlanceList = ({ item, index }) => {
   return (

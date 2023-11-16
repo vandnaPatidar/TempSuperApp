@@ -5,7 +5,7 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import * as Progress from 'react-native-progress';
 import LottieView from 'lottie-react-native';
 import { Dropdown } from 'react-native-element-dropdown';
-import { animations, images } from '../../../utils/constants'
+import { animations, images } from '../../utils/constants'
 
 
 const MyComponent = () => {    

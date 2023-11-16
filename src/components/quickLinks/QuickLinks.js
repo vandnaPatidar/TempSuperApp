@@ -1,6 +1,6 @@
 import React from "react";
 import { View, FlatList, Image, StyleSheet, Text } from "react-native";
-import { icons, images } from "../../../utils/constants";
+import { icons, images } from "../../utils/constants";
 
 const quickData = [
   { 

@@ -3,7 +3,7 @@ import { View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import CircularImage from './CircularImage';
 import sizzlerData from './sizzlerData.json';
 import CampaignModal from './CampaignModal';
-import { images } from '../../../utils/constants';
+import { images } from '../../utils/constants';
 
 const imageMap = {
   'FirstReward.png': images.FIRST_REWARD_IMAGE,

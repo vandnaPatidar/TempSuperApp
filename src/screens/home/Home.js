@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import React from 'react';
-import SizzlerCampaigns from './sizzler/SizzlerCampaigns';
-import QuickLinks from './quickLinks/QuickLinks';
-import LeadsAtGlance from '../../components/LeadsAtGlance';
-import PagerViewContest from '../home/contest/PagerViewContest';
+import SizzlerCampaigns from '../../components/sizzler/SizzlerCampaigns';
+import QuickLinks from '../../components/quickLinks/QuickLinks';
+import LeadsAtGlance from '../../components/LeadsAtGlance/LeadsAtGlance';
+import PagerViewContest from '../../components/contest/PagerViewContest';
 import Header from '../../components/Header/Header';
-import Performance from './performance/Performance';
+import Performance from '../../components/performance/Performance';
 import MorningHuddles from '../../components/MorningHuddle/MorningHuddles';
 
 const Home = () => {

@@ -7,8 +7,8 @@ import {
   StyleSheet,
   Text,
 } from "react-native";
-import { icons, images } from "../../../utils/constants";
-import Table from "../../../components/Table";
+import { icons, images } from "../../utils/constants";
+import Table from "../../components/Table";
 
 const CampaignModal = ({ visible, onClose }) => {
   const jsonData = [

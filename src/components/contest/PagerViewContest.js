@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import PagerView from 'react-native-pager-view';
 import LottieView from 'lottie-react-native';
-import { icons } from '../../../utils/constants';
+import { icons } from '../../utils/constants';
 
 const pagesData = [
   {
