@@ -5,7 +5,7 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import * as Progress from 'react-native-progress';
 import LottieView from 'lottie-react-native';
 import { Dropdown } from 'react-native-element-dropdown';
-import { images } from '../../../utils/constants'
+import { animations, images } from '../../utils/constants'
 
 
 const MyComponent = () => {    
@@ -111,7 +111,7 @@ const MyComponent = () => {
             <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
               <View  style={{position: 'absolute'}}>
                   <LottieView
-                    source={require('../../../../assets/confetti.json')}
+                    source={animations.CONFETTI}
                     autoPlay
                     loop={true}
                     style={{ width: 90,height:80,
@@ -224,7 +224,7 @@ const MyComponent = () => {
               </View>
               <View>
                 <LottieView
-                    source={require('../../../../assets/hot.json')}
+                    source={animations.HOT}
                     autoPlay
                     loop={true}
                     style={{ width: 90,height:80,

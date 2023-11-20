@@ -10,11 +10,8 @@ import {
   Text,
 } from 'react-native';
 import { CurvedBottomBarExpo } from 'react-native-curved-bottom-bar';
-import Ionicons from '@expo/vector-icons/Ionicons';
-import MenuClip from '../assets/Icons/clipboard.png';
-import HomeIcon from '../images/home.png';
-import { NavigationContainer } from '@react-navigation/native';
 import Home from './screens/home/Home';
+import { icons, images } from './utils/constants';
 
 LogBox.ignoreAllLogs();
 
@@ -34,25 +31,25 @@ const Screen4 = () => {
   return <View style={styles.screen2} />;
 };
 
-const BottomNavigation = () => {
+const BottomNavigation = ({navigation}) => {
   const _renderIcon = (routeName, selectedTab) => {
     let icon = '';
 
     switch (routeName) {
       case 'title1':
-        icon = require('../images/home.png');
+        icon = icons.HOME_ICON;
         name = 'Home';
         break;
       case 'title2':
-        icon = require('../images/contacts.png');
+        icon = icons.CONTACTS_ICON;
         name = 'Leads';
         break;
       case 'title3':
-        icon = require('../images/calendar.png');
+        icon = icons.CALENDAR_ICON;
         name = 'Calendar';
         break;
       case 'title4':
-        icon = require('../images/menu.png');
+        icon = icons.MENU_ICON;
         name = 'Menu';
         break;
     }
@@ -63,6 +60,7 @@ const BottomNavigation = () => {
           source={icon}
           size={26}
           color={routeName === selectedTab ? 'black' : 'gray'}
+          resizeMode='contain'
         />
         <Text>{name}</Text>
         {/* <AntDesign name={icon} size={25}  color={routeName === selectedTab ? 'black' : 'gray'} /> */}
@@ -97,7 +95,7 @@ const BottomNavigation = () => {
             style={styles.button}
             onPress={() => Alert.alert('Click Action')}
           >
-            <Image source={MenuClip} width={30} height={30} />
+            <Image source={icons.MENU_CLIPBOARD} width={30} height={30} />
           </TouchableOpacity>
         </Animated.View>
       )}
@@ -154,7 +152,7 @@ export const styles = StyleSheet.create({
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#E8E8E8',
+    backgroundColor: '#FFFFFF',
     bottom: 30,
     shadowColor: '#000',
     shadowOffset: {

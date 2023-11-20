@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import PagerView from 'react-native-pager-view';
 import LottieView from 'lottie-react-native';
+import { icons } from '../../utils/constants';
 
 const pagesData = [
   {
@@ -54,7 +55,7 @@ const PagerViewContest = () => {
             <View
               style={{ flexDirection: 'row', justifyContent: 'space-between' }}
             >
-              <Image source={require('../../../../assets/ideaIcon.png')} />
+              <Image source={icons.IDEA_ICON} />
               <Text style={styles.comonText}>KEY ACTIONS FOR YOU</Text>
             </View>
           </View>

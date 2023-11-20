@@ -2,17 +2,14 @@ import React, { useState } from 'react';
 import { View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import CircularImage from './CircularImage';
 import sizzlerData from './sizzlerData.json';
-import ThirdRewardImage from '../../../../assets/ThirdReward.png';
-import FourthRewardImage from '../../../../assets/FourthReward.png';
 import CampaignModal from './CampaignModal';
-import FirstRewardImage from '../../../../assets/FirstReward.png';
-import SecondRewardImage from '../../../../assets/SecondReward.png';
+import { images } from '../../utils/constants';
 
 const imageMap = {
-  'FirstReward.png': FirstRewardImage,
-  'SecondReward.png': SecondRewardImage,
-  'ThirdReward.png': ThirdRewardImage,
-  'FourthReward.png': FourthRewardImage,
+  'FirstReward.png': images.FIRST_REWARD_IMAGE,
+  'SecondReward.png': images.SECOND_REWARD_IMAGE,
+  'ThirdReward.png': images.THIRD_REWARD_IMAGE,
+  'FourthReward.png': images.FOURTH_REWARD_IMAGE,
 };
 
 const SizzlerCampaigns = () => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { icons } from '../../utils/constants';
 
 const MorningHuddles = () => {
   const meetingData = {
@@ -10,7 +11,7 @@ const MorningHuddles = () => {
         endTime: '10:30',
         title: 'Daily Standup Meeting',
         description: 'Morning huddle',
-        imageSource: require('../../../assets/microsoft_teams.png'), // Replace with your image source
+        imageSource: icons.MICROSOFT_TEAMS, // Replace with your image source
       },
     ],
   };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
-import { status, leadsAtGlance, leadsAtGlanceData } from "../utils/constants";
+import { status, leadsAtGlance, leadsAtGlanceData } from "../../utils/constants";
 import LeadsAtGlanceList from "./LeadsAtGlanceList";
 
 const LeadsAtGlance = () => {

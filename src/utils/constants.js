@@ -1,3 +1,43 @@
+export const images = {
+  MAXLIFE_LOGO: require("../../assets/Images/Maxlife-Logo.png"),
+  STATUS: require("../../assets/Images/status.png"),
+  USER_PROFILE: require("../../assets/Images/user-photo.png"),
+  FIRST_MODAL: require("../../assets/Images/FirstModal.png"),
+  FIRST_REWARD_IMAGE: require("../../assets/Images/FirstReward.png"),
+  SECOND_REWARD_IMAGE: require("../../assets/Images/SecondReward.png"),
+  THIRD_REWARD_IMAGE: require("../../assets/Images/ThirdReward.png"),
+  FOURTH_REWARD_IMAGE: require("../../assets/Images/FourthReward.png"),
+};
+
+export const icons = {
+  CHEVRON_DOWN: require("../../assets/Icons/chevron-down.png"),
+  CHEVRON_UP: require("../../assets/Icons/chevron-up.png"),
+  CHEVRON_RIGHT: require("../../assets/Icons/chevron-right.png"),
+  CHEVRON_RIGHT_BLACK: require("../../assets/Icons/chevron-right-black.png"),
+  PLUS_BUTTON: require("../../assets/Icons/plus.png"),
+  LEADS: require("../../assets/Icons/Group.png"),
+  ARROW_RIGHT: require("../../assets/Icons/arrow-right.png"),
+  CLOSE_ICON: require("../../assets/Icons/close.png"),
+  ADD_NEW_LEAD_ICON: require("../../assets/Icons/AddNewLead.png"),
+  TRACK_APPLICATION_ICON: require("../../assets/Icons/TrackApplication.png"),
+  MENU_CLIPBOARD: require("../../assets/Icons/clipboard.png"),
+  HOME_ICON: require("../../assets/Icons/home.png"),
+  CONTACTS_ICON: require("../../assets/Icons/contacts.png"),
+  CALENDAR_ICON: require("../../assets/Icons/calendar.png"),
+  MENU_ICON: require("../../assets/Icons/menu.png"),
+  MICROSOFT_TEAMS: require("../../assets/Icons/microsoft_teams.png"),
+  BELL_ICON: require("../../assets/Icons/Union.png"),
+  HELP_CENTER: require("../../assets/Icons/Vector.png"),
+  IDEA_ICON: require("../../assets/Icons/ideaIcon.png"),
+};
+
+export const animations = {
+ CONFETTI: require("../../assets/Animations/confetti.json"),
+ HOT: require("../../assets/Animations/hot.json"),
+};
+
+export const GO_WITH_THIS_QUOTE = "Go with this quote";
+
 export const plans = [
   {
     id: "1",
@@ -200,6 +240,7 @@ export const leads = [
   },
 ];
 
+<<<<<<< HEAD
 export const images = {
   CHEVRON_DOWN: require("../../images/chevron-down.png"),
   CHEVRON_UP: require("../../images/chevron-up.png"),
@@ -215,6 +256,8 @@ export const images = {
 };
 
 export const GO_WITH_THIS_QUOTE = "Go with this quote";
+=======
+>>>>>>> 212e2ac10358269e93f479ee48299a39cdc5198d
 export const leadsAtGlance = [
   // {
   //   name: "Status",
@@ -233,51 +276,51 @@ export const leadsAtGlance = [
 export const leadsAtGlanceData = [
   [
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Fresh Leads",
       statusCount: 175,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Calls Done",
       statusCount: 32,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Meeting Scheduled",
       statusCount: 38,
     },
   ],
   [
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Refferal Leads",
       statusCount: 15,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Self Leads",
       statusCount: 2,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: " Cross Sell Leads",
       statusCount: 8,
     },
   ],
   [
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "Today",
       statusCount: 1,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: "> 1 Week",
       statusCount: 0,
     },
     {
-      image: require("../../images/Group.png"),
+      image: require("../../assets/Icons/Group.png"),
       statusName: " < 1 Week",
       statusCount: 0,
     },
@@ -286,55 +329,55 @@ export const leadsAtGlanceData = [
 
 export const status = [
   {
-    image: require("../../images/Group.png"),
+    image: require("../../assets/Icons/Group.png"),
     statusName: "Fresh Leads",
     statusCount: 175,
   },
   {
-    image: require("../../images/Group.png"),
+    image: require("../../assets/Icons/Group.png"),
     statusName: "Calls Done",
     statusCount: 32,
   },
   {
-    image: require("../../images/Group.png"),
+    image: require("../../assets/Icons/Group.png"),
     statusName: "Meeting Scheduled",
     statusCount: 38,
   },
 ];
 
-export const modalTable=[
+export const modalTable = [
   [
     {
-      id:1,
-      name:"Criteria",
-      value:"2 L to 4.99 L (Adj. MFYP)"
+      id: 1,
+      name: "Criteria",
+      value: "2 L to 4.99 L (Adj. MFYP)",
     },
     {
-      id:2,
-      name:"Reward",
-      value:"Rs 1000/- per NOP"
+      id: 2,
+      name: "Reward",
+      value: "Rs 1000/- per NOP",
     },
     {
-      id:3,
-      name:"Minima",
-      value:"100% MPA Achieved"
+      id: 3,
+      name: "Minima",
+      value: "100% MPA Achieved",
     },
   ],
   [
     {
-      id:1,
-      name:"Criteria",
-      value:"5 L to Above (Adj. MFYP)"
+      id: 1,
+      name: "Criteria",
+      value: "5 L to Above (Adj. MFYP)",
     },
     {
-      id:2,
-      name:"Reward",
-      value:"Rs 3500/- per NOP"
+      id: 2,
+      name: "Reward",
+      value: "Rs 3500/- per NOP",
     },
     {
-      id:3,
-      name:"Minima",
-      value:"100% MPA Achieved"
+      id: 3,
+      name: "Minima",
+      value: "100% MPA Achieved",
     },
-  ]
-]
+  ],
+];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
-import { images, GO_WITH_THIS_QUOTE } from "../utils/constants";
+import { GO_WITH_THIS_QUOTE, icons } from "../utils/constants";
 
 const QuoteCard = ({ item }) => {
   const [isFullDetails, setIsFullDetails] = useState(false);
@@ -22,7 +22,7 @@ const QuoteCard = ({ item }) => {
             style={styles.chevronButton}
           >
             <Image
-              source={isFullDetails ? images.CHEVRON_UP : images.CHEVRON_DOWN}
+              source={isFullDetails ? icons.CHEVRON_UP : icons.CHEVRON_DOWN}
             />
           </TouchableOpacity>
         </View>
@@ -52,7 +52,7 @@ const QuoteCard = ({ item }) => {
             </Text>
             <Image
               style={{ marginLeft: "auto" }}
-              source={images.CHEVRON_RIGHT}
+              source={icons.CHEVRON_RIGHT}
             />
           </TouchableOpacity>
         </View>
