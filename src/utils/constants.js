@@ -240,24 +240,11 @@ export const leads = [
   },
 ];
 
-<<<<<<< HEAD
-export const images = {
-  CHEVRON_DOWN: require("../../images/chevron-down.png"),
-  CHEVRON_UP: require("../../images/chevron-up.png"),
-  CHEVRON_RIGHT: require("../../images/chevron-right.png"),
-  CHEVRON_RIGHT_BLACK: require("../../images/chevron-right-black.png"),
-  PLUS_BUTTON: require("../../images/Close.png"),
-  MAXLIFE_LOGO: require("../../images/Maxlife-Logo.png"),
-  LEADS: require("../../images/Group.png"),
-  // LEADS: require("../../images/Groups.svg"),
-  ARROW_RIGHT: require("../../images/arrow-right.png"),
-  STATUS: require("../../images/status.png"),
-  USER_PROFILE_PHOTO: require('../../assets/Images/user-photo.png'),
-};
 
-export const GO_WITH_THIS_QUOTE = "Go with this quote";
-=======
->>>>>>> 212e2ac10358269e93f479ee48299a39cdc5198d
+
+
+
+
 export const leadsAtGlance = [
   // {
   //   name: "Status",
