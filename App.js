@@ -9,6 +9,7 @@ import PolicyLogin from './src/screens/PolicyLoginScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import OnboardingScreen from './src/screens/OnboardingScreen';
 import BottomNavigation from './src/BottomNavigation';
+import MyProfile from './src/components/Profile/MyProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +47,7 @@ const App = () => {
           // }}
         />
         <Stack.Screen name='Quotes' component={Quotes} />
+        <Stack.Screen name='My Profile' component={MyProfile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

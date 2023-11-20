@@ -1,13 +1,18 @@
-import React from 'react';
-import styles from './style';
-import { View, Text, Image, Pressable } from 'react-native';
+import React from "react";
+import styles from "./style";
+import { View, Text, Image, Pressable, TouchableOpacity } from "react-native";
 // import userProfile from '../../../assets/Images/user-photo.png';
-import {images} from '../../utils/constants'
-import arrowIcon from '../../../assets/Icons/chevron-down.png';
-import bellIcon from '../../../assets/Icons/Union.png';
-import helpCenter from '../../../assets/Icons/Vector.png';
+import { images } from "../../utils/constants";
+import arrowIcon from "../../../assets/Icons/chevron-down.png";
+import bellIcon from "../../../assets/Icons/Union.png";
+import helpCenter from "../../../assets/Icons/Vector.png";
+import { useNavigation } from "@react-navigation/native";
+
+
 
 const Header = () => {
+  const navigation = useNavigation()
+  
   return (
     <View style={styles.container}>
       {/* Left side logo */}
@@ -16,9 +21,9 @@ const Header = () => {
         <Text style={styles.dotStyle} />
 
         {/* Right side arrow */}
-        <Pressable style={styles.rightSideArrow}>
+        <TouchableOpacity onPress={() => navigation.navigate("My Profile")} style={styles.rightSideArrow}>
           <Image source={arrowIcon} style={styles.arrowImage} />
-        </Pressable>
+        </TouchableOpacity>
       </View>
 
       {/* Right side icons */}

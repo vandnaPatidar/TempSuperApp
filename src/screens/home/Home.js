@@ -10,9 +10,9 @@ import MorningHuddles from "../../components/MorningHuddle/MorningHuddles";
 
 const Home = () => {
   return (
-    <>
+    <View>
       <View style={{ marginTop: 25, marginBottom: 16 }}>
-        <Header />
+        <Header/>
       </View>
       <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
         <SizzlerCampaigns />
@@ -30,7 +30,7 @@ const Home = () => {
 
         <LeadsAtGlance />
       </ScrollView>
-    </>
+    </View>
   );
 };
 
